@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier d'achat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="video-container">
+        <video autoplay loop muted class="background-video">
+          <source src="animation.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <nav class="nav-overlay">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#contact">Nous Contacter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="panier">Panier</h1>
+
+    <section id="produits">
+      <div class="product-container">
+        <div class="product-item" data-price="60">
+          <img
+            src="./images/adidas.png"
+            alt="Produit 1"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2>Adidas</h2>
+            <p>60 €</p>
+          </div>
+          <button class="heart-btn">&#9825;</button>
+          <button class="remove-btn">Supprimer</button>
+          <div class="quantity-container">
+            <button class="minus">-</button>
+            <span class="quantity">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <div class="product-item" data-price="60">
+          <img
+            src="./images/brooks noires.png"
+            alt="Produit 2"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2>Brooks Noires</h2>
+            <p>60 €</p>
+          </div>
+          <button class="heart-btn">&#9825;</button>
+          <button class="remove-btn">Supprimer</button>
+          <div class="quantity-container">
+            <button class="minus">-</button>
+            <span class="quantity">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+        <div class="product-item" data-price="60">
+          <img
+            src="./images/brooks.png"
+            alt="Produit 3"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2>Brooks</h2>
+            <p>60 €</p>
+          </div>
+          <button class="heart-btn">&#9825;</button>
+          <button class="remove-btn">Supprimer</button>
+          <div class="quantity-container">
+            <button class="minus">-</button>
+            <span class="quantity">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+        <div class="product-item" data-price="65">
+          <img
+            src="./images/sambas .png"
+            alt="Produit 4"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2>Sambas OG</h2>
+            <p>65 €</p>
+          </div>
+          <button class="heart-btn">&#9825;</button>
+          <button class="remove-btn">Supprimer</button>
+          <div class="quantity-container">
+            <button class="minus">-</button>
+            <span class="quantity">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+        <div class="product-item" data-price="70">
+          <img
+            src="./images/nikes .png"
+            alt="Produit 6"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2>Nikes</h2>
+            <p>70 €</p>
+          </div>
+          <button class="heart-btn">&#9825;</button>
+          <button class="remove-btn">Supprimer</button>
+          <div class="quantity-container">
+            <button class="minus">-</button>
+            <span class="quantity">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="valider-le-panier">Valider le panier</button>
+
+    <section id="payment">
+      <h2>Procéder au paiement</h2>
+      <div class="payment-details">
+        <p>Sous-total: <span id="subtotal">0,00</span> €</p>
+        <p>Livraison: <span>0,00 €</span></p>
+        <p>Total (TVA incluse): <span id="total">00</span> €</p>
+      </div>
+      <button class="order-btn">Commander</button>
+      <div class="payment-methods">
+        <p>Nous acceptons :</p>
+        <i class="fab fa-cc-mastercard payment-icon"></i>
+        <i class="fab fa-cc-visa payment-icon"></i>
+        <i class="fab fa-cc-paypal payment-icon"></i>
+        <i class="fab fa-cc-amex payment-icon"></i>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
